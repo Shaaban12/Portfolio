@@ -217,3 +217,24 @@ nav ul li a:hover {
 }
 
 /* End SKILLS */
+/* Start Footer */
+
+footer {
+    background-color: #171a1c;
+    padding: 2rem var(--padding);
+}
+footer .content-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+footer .content-footer p {
+    color: var(--lightColor);
+    text-align: center;
+    width: 500px;
+}
+
+
+/* End Footer */
