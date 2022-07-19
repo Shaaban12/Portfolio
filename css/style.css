@@ -23,6 +23,7 @@ p {
 .text-center {
     text-align: center;
 }
+
 h5 {
     margin-bottom: 1rem;
 }
@@ -193,17 +194,17 @@ nav ul li a:hover {
     align-items: center;
     justify-content: space-between;
 }
-.skills .container-skills {
+.skills .container-texts {
     width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.skills .container-skills .container-skill {
+.skills .container-texts .container-skills {
     display: flex;
     flex-wrap: wrap;
 }
-.skills .container-skills .container-skill .skill {
+.skills .container-texts .container-skills .skill {
     width: 100px;
     height: 100px;
     background-color: var(--lightColor);
@@ -213,7 +214,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
  }
- .skills .container-skills .container-skill .skill img {
+ .skills .container-texts .container-skills .skill img {
     width: 70%;
  }
 .skills .container-images {
@@ -288,8 +289,11 @@ footer .content-footer p {
     html {
         font-size: 13px;
     }
-    .home .container-images {
+    .container-images {
         display: none;
+    }
+    .container-texts {
+        position:static;
     }
     nav {
         position:fixed;
@@ -334,10 +338,6 @@ footer .content-footer p {
     #menu {
         display: block;
     }
-
-    .about .container-images {
-        display: none;
-    }
     .about .container-texts {
         position: static ;
         width: 100%;
@@ -348,6 +348,20 @@ footer .content-footer p {
         gap: 1rem;
     }
     .services .box .card {
+        width: 100%;
+    }
+    .skills .container-texts {
+        width: 100vw;
+
+    }
+    .skills .container-texts .container-skills {
+        justify-content: center;
+    }
+    .skills .container-texts .container-skills .skill {
+        width: 75px;
+        height: 75px;
+    }
+    footer .content-footer p {
         width: 100%;
     }
 }
