@@ -23,6 +23,9 @@ p {
 .text-center {
     text-align: center;
 }
+h5 {
+    margin-bottom: 1rem;
+}
 
 /* Start Home */
 .home {
@@ -154,6 +157,7 @@ nav ul li a:hover {
 .about .container-texts {
     width: 35%;
 }
+
 /* End ABOUT */
 
 /* START SERVICES */
@@ -335,6 +339,15 @@ footer .content-footer p {
         display: none;
     }
     .about .container-texts {
+        position: static ;
+        width: 100%;
+    }
+    .services .box {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .services .box .card {
         width: 100%;
     }
 }
